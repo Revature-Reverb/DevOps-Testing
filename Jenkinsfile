@@ -4,7 +4,7 @@ pipeline {
 		stage('Build') {
 			steps {
 				withMaven {
-					sh "clean install"
+					sh "mvn clean install"
 				}
 				sh 'echo "Hello World"'
 				sh '''
