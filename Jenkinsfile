@@ -4,8 +4,7 @@ pipeline {
         stage('Build') {
             steps {
 				withMaven {
-					sh "mvn clean verify"
-					sh "mvn –version"
+					sh "mvn clean install"
 				}
                 sh 'echo "Hello World"'
                 sh '''
