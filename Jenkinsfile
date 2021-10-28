@@ -11,7 +11,7 @@ pipeline {
                     echo "Multiline shell steps works too"
                     ls
                 '''
-				sh "echo "POM_VERSION=$(grep -v '\[' version.log)" > props.properties"
+				sh 'echo "POM_VERSION=$(grep -v '\[' version.log)" > props.properties'
             }
         }
     }
